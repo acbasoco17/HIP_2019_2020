@@ -1,5 +1,3 @@
-Ana's Project - Change some of the Magic Mirror code.
-
 ![MagicMirror²: The open source modular smart mirror platform. ](.github/header.png)
 
 <p align="center">
