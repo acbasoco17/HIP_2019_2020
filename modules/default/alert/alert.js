@@ -7,6 +7,9 @@
  * MIT Licensed.
  */
 
+// Helllo World Trial 1
+var greeting = "hello world";
+
 Module.register("alert",{
 	defaults: {
 		// scale|slide|genie|jelly|flip|bouncyflip|exploader
