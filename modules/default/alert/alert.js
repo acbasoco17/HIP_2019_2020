@@ -10,7 +10,7 @@
 Module.register("alert",{
 	defaults: {
 		// scale|slide|genie|jelly|flip|bouncyflip|exploader
-		effect: "slide",
+		effect: "flip",
 		// scale|slide|genie|jelly|flip|bouncyflip|exploader
 		alert_effect: "exploader",
 		//time a notification is displayed in seconds
@@ -35,7 +35,7 @@ Module.register("alert",{
 		};
 	},
 	show_notification: function(message) {
-		if (this.config.effect === "slide") {this.config.effect = this.config.effect + "-" + this.config.position;}
+		if (this.config.effect === "flip") {this.config.effect = this.config.effect + "-" + this.config.position;}
 		msg = "";
 		if (message.title) {
 			msg += "<span class='thin dimmed medium'>" + message.title + "</span>";
