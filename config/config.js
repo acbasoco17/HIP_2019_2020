@@ -34,7 +34,8 @@ var config = {
 		{
 			module: "alert",
 			config: {
-				  effect: "flip"
+				  effect: "flip",
+					welcome_message: "hello world"
 			}
 		},
 		{
