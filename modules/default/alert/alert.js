@@ -7,8 +7,7 @@
  * MIT Licensed.
  */
 
-// Helllo World Trial 1
-var greeting = "hello world";
+// New Change
 
 Module.register("alert",{
 	defaults: {
