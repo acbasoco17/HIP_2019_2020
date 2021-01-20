@@ -25,11 +25,11 @@ var config = {
 	timeFormat: 24,
 	units: "metric",
 	// serverOnly:  true/false/"local" ,
-			     // local for armv6l processors, default 
+			     // local for armv6l processors, default
 			     //   starts serveronly and then starts chrome browser
 			     // false, default for all  NON-armv6l devices
 			     // true, force serveronly mode, because you want to.. no UI on this device
-	
+
 	modules: [
 		{
 			module: "alert",
@@ -64,7 +64,7 @@ var config = {
 			config: {
 				location: "New York",
 				locationID: "",  //ID from http://bulk.openweathermap.org/sample/city.list.json.gz; unzip the gz file and find your city
-				appid: "YOUR_OPENWEATHER_API_KEY"
+				appid: "e6f75ace7f92efa4d9e412e65d7d7bb3" // API Key
 			}
 		},
 		{
@@ -74,7 +74,7 @@ var config = {
 			config: {
 				location: "New York",
 				locationID: "5128581",  //ID from http://bulk.openweathermap.org/sample/city.list.json.gz; unzip the gz file and find your city
-				appid: "YOUR_OPENWEATHER_API_KEY"
+				appid: "e6f75ace7f92efa4d9e412e65d7d7bb3" // API Key
 			}
 		},
 		{
