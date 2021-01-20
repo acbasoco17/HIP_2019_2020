@@ -10,7 +10,7 @@
 Module.register("alert",{
 	defaults: {
 		// scale|slide|genie|jelly|flip|bouncyflip|exploader
-		effect: "bouncyflip",
+		effect: "slide",
 		// scale|slide|genie|jelly|flip|bouncyflip|exploader
 		alert_effect: "jelly",
 		//time a notification is displayed in seconds
