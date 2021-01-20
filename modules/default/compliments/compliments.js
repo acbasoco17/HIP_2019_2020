@@ -22,9 +22,9 @@ Module.register("compliments", {
 				"Make today your favorite day!"
 			],
 			afternoon: [
-				"Hello, beauty!",
-				"You're still looking good!",
-				"The day's not over!"
+				"Hello, Ana!",
+				"Hello, Arizza!",
+				"Hello, Deja!"
 			],
 			evening: [
 				"Wow, you look hot!",
