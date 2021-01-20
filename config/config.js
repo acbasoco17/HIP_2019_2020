@@ -33,6 +33,9 @@ var config = {
 	modules: [
 		{
 			module: "alert",
+			config: {
+				  effect: "flip"
+			}
 		},
 		{
 			module: "updatenotification",
