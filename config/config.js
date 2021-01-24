@@ -37,6 +37,8 @@ var config = {
 				  effect: "flip",
 					welcome_message: "hello world"
 			}
+			self.sendNotification("SHOW_ALERT", {type: "notification",
+																					 message: "Hello World"});
 		},
 		{
 			module: "updatenotification",
@@ -67,7 +69,7 @@ var config = {
 			position: "top_right",
 			config: {
 				location: "New York",
-				locationID: "",  //ID from http://bulk.openweathermap.org/sample/city.list.json.gz; unzip the gz file and find your city
+				locationID: "5128581",  //ID from http://bulk.openweathermap.org/sample/city.list.json.gz; unzip the gz file and find your city
 				appid: "e6f75ace7f92efa4d9e412e65d7d7bb3" // API Key
 			}
 		},
