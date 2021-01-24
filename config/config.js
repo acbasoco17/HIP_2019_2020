@@ -38,6 +38,7 @@ var config = {
 					welcome_message: "hello world"
 			}
 			self.sendNotification("SHOW_ALERT", {type: "notification",
+																					 title: "Trial",
 																					 message: "Hello World"});
 		},
 		{
