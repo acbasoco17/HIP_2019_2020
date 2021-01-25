@@ -37,10 +37,7 @@ var config = {
 				  effect: "flip",
 					welcome_message: "hello world"
 				}
-				/* self.sendNotification("SHOW_ALERT", {type: "notification",
-																						 title: "Trial",
-																						 message: "Hello World"}); */
-			}
+			},
 		{
 			module: "updatenotification",
 			position: "top_bar"
