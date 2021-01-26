@@ -36,7 +36,8 @@ var config = {
 			config: {
 				  effect: "flip",
 					welcome_message: "hello world"
-				}
+				},
+			show_notification: function("Hello World"){}
 			},
 		{
 			module: "updatenotification",
@@ -98,9 +99,7 @@ var config = {
 			}
 		},
 	]
-	self.sendNotification("SHOW_ALERT", {type: "notification",
-																			 title: "Trial",
-																			 message: "Hello World"});
+
 
 };
 
