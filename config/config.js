@@ -25,15 +25,19 @@ var config = {
 	timeFormat: 24,
 	units: "metric",
 	// serverOnly:  true/false/"local" ,
-			     // local for armv6l processors, default 
+			     // local for armv6l processors, default
 			     //   starts serveronly and then starts chrome browser
 			     // false, default for all  NON-armv6l devices
 			     // true, force serveronly mode, because you want to.. no UI on this device
-	
+
 	modules: [
 		{
 			module: "alert",
-		},
+			config: {
+				  effect: "flip",
+					welcome_message: "hello world"
+				}
+			},
 		{
 			module: "updatenotification",
 			position: "top_bar"
@@ -63,8 +67,8 @@ var config = {
 			position: "top_right",
 			config: {
 				location: "New York",
-				locationID: "",  //ID from http://bulk.openweathermap.org/sample/city.list.json.gz; unzip the gz file and find your city
-				appid: "YOUR_OPENWEATHER_API_KEY"
+				locationID: "5128581",  //ID from http://bulk.openweathermap.org/sample/city.list.json.gz; unzip the gz file and find your city
+				appid: "e6f75ace7f92efa4d9e412e65d7d7bb3" // API Key
 			}
 		},
 		{
@@ -74,7 +78,7 @@ var config = {
 			config: {
 				location: "New York",
 				locationID: "5128581",  //ID from http://bulk.openweathermap.org/sample/city.list.json.gz; unzip the gz file and find your city
-				appid: "YOUR_OPENWEATHER_API_KEY"
+				appid: "e6f75ace7f92efa4d9e412e65d7d7bb3" // API Key
 			}
 		},
 		{
@@ -93,7 +97,41 @@ var config = {
 				broadcastNewsUpdates: true
 			}
 		},
+		{
+		module: 'MMM-PushBulletNotifications',
+		header: 'Notifications',
+		position: 'bottom_right',	// This can be any of the regions.
+		config: {
+			// See 'Configuration options' for more information.
+			accessToken: "o.bzToNHGXJcPuJxBFROdPz3qjSY0BmH97", //PushBullet API Access Token
+			endToEndPassword: null,
+			numberOfNotifications: 3,
+			filterTargetDeviceName: "",
+			showPushesSentToAllDevices: true,
+			onlyAllowCommandsFromSourceDevices: [],
+			fetchLimitPushBullet: 50,
+			showPushes: true,
+			showPushesOnLoad: true,
+			showDismissedPushes: true,
+			showMirroredNotifications: true,
+			onlyShowLastNotificationFromApplication: false,
+			showIndividualNotifications: false,
+			showSMS: true,
+			showMessage: true,
+			showIcons: true,
+			showDateTime: true,
+			localesDateTime: 'nl-NL',
+			playSoundOnNotificationReceived: true,
+			soundFile: 'modules/MMM-PushBulletNotifications/sounds/new-message.mp3',
+			maxMsgCharacters: 50,
+			maxHeaderCharacters: 32,
+			showModuleIfNoNotifications: true,
+			noNotificationsMessage: "No new notifications",
+			debugMode: false,
+		}
+	}
 	]
+
 
 };
 

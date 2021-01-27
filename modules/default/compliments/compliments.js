@@ -15,14 +15,16 @@ Module.register("compliments", {
 				"Hey there sexy!"
 			],
 			morning: [
-				"Good morning, handsome!",
+				"Good morning, gorgeous!",
 				"Enjoy your day!",
-				"How was your sleep?"
+				"How was your sleep?",
+				"Today's the day!",
+				"Make today your favorite day!"
 			],
 			afternoon: [
-				"Hello, beauty!",
-				"You look sexy!",
-				"Looking good today!"
+				"Hello, Ana!",
+				"Hello, Arizza!",
+				"Hello, Deja!"
 			],
 			evening: [
 				"Wow, you look hot!",
@@ -170,9 +172,9 @@ Module.register("compliments", {
 	getDom: function() {
 		var wrapper = document.createElement("div");
 		wrapper.className = this.config.classes ? this.config.classes : "thin xlarge bright pre-line";
-		// get the compliment text 
+		// get the compliment text
 		var complimentText = this.randomCompliment();
-		// split it into parts on newline text 
+		// split it into parts on newline text
 		var parts= complimentText.split('\n')
 		// create a span to hold it all
 		var compliment=document.createElement('span')

@@ -12,7 +12,7 @@ Module.register("alert",{
 		// scale|slide|genie|jelly|flip|bouncyflip|exploader
 		effect: "slide",
 		// scale|slide|genie|jelly|flip|bouncyflip|exploader
-		alert_effect: "jelly",
+		alert_effect: "exploader",
 		//time a notification is displayed in seconds
 		display_time: 3500,
 		//Position
