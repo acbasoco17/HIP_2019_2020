@@ -36,7 +36,8 @@ var config = {
 			config: {
 				  effect: "flip",
 					welcome_message: "hello world"
-				}
+				},
+				show_notification: function("New Message"){}
 			},
 		{
 			module: "updatenotification",
