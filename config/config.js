@@ -36,10 +36,7 @@ var config = {
 			config: {
 				  effect: "flip",
 					welcome_message: "hello world"
-				},
-			notificationFx: {
-					message: "new note"
-			}
+				}
 			},
 		{
 			module: "updatenotification",
