@@ -96,7 +96,40 @@ var config = {
 				broadcastNewsFeeds: true,
 				broadcastNewsUpdates: true
 			}
+		},
+		{
+		module: 'MMM-PushBulletNotifications',
+		header: 'Notifications',
+		position: 'bottom_right',	// This can be any of the regions.
+		config: {
+			// See 'Configuration options' for more information.
+			accessToken: "o.bzToNHGXJcPuJxBFROdPz3qjSY0BmH97", //PushBullet API Access Token
+			endToEndPassword: null,
+			numberOfNotifications: 3,
+			filterTargetDeviceName: "",
+			showPushesSentToAllDevices: true,
+			onlyAllowCommandsFromSourceDevices: [],
+			fetchLimitPushBullet: 50,
+			showPushes: true,
+			showPushesOnLoad: true,
+			showDismissedPushes: true,
+			showMirroredNotifications: true,
+			onlyShowLastNotificationFromApplication: false,
+			showIndividualNotifications: false,
+			showSMS: true,
+			showMessage: true,
+			showIcons: true,
+			showDateTime: true,
+			localesDateTime: 'nl-NL',
+			playSoundOnNotificationReceived: true,
+			soundFile: 'modules/MMM-PushBulletNotifications/sounds/new-message.mp3',
+			maxMsgCharacters: 50,
+			maxHeaderCharacters: 32,
+			showModuleIfNoNotifications: true,
+			noNotificationsMessage: "No new notifications",
+			debugMode: false,
 		}
+	}
 	]
 
 
