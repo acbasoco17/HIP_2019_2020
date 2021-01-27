@@ -36,7 +36,8 @@ var config = {
 			config: {
 				  effect: "flip",
 					welcome_message: "hello world"
-				},
+				}
+			},
 		{
 			module: "updatenotification",
 			position: "top_bar"
