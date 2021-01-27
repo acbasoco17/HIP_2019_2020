@@ -95,7 +95,7 @@ var config = {
 				broadcastNewsFeeds: true,
 				broadcastNewsUpdates: true
 			}
-		},
+		}
 	]
 
 
