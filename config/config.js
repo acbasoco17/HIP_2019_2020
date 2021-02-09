@@ -87,8 +87,8 @@ var config = {
 			config: {
 				feeds: [
 					{
-						title: "New York Times",
-						url: "http://www.nytimes.com/services/xml/rss/nyt/HomePage.xml"
+						title: "USA Today",
+						url: "https://feeds.feedblitz.com/usatoday-NewsTopStories"
 					}
 				],
 				showSourceTitle: true,
