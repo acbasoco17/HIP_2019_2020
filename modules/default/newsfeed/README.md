@@ -29,6 +29,10 @@ modules: [
 					title: "BBC",
 					url: "http://feeds.bbci.co.uk/news/video_and_audio/news_front_page/rss.xml?edition=uk",
 				},
+				{
+					title: "USA Today",
+					url: "https://feeds.feedblitz.com/usatoday-NewsTopStories",
+				},
 			]
 		}
 	}
