@@ -87,8 +87,8 @@ var config = {
 			config: {
 				feeds: [
 					{
-						title: "USA Today",
-						url: "https://feeds.feedblitz.com/usatoday-NewsTopStories"
+						title: "Northrop News",
+						url: "http://news.northropgrumman.com/rss.xml"
 					}
 				],
 				showSourceTitle: true,
