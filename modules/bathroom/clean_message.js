@@ -1,6 +1,6 @@
 Module.register("clean_message", {
-  var firebase = require("firebase");
   getDom: (function () {
+    var firebase = require("firebase");
     const config = {
       apiKey: "AIzaSyCBYsN7VD4yYAQy-6lK5ug1GLZE63uZxyo",
       authDomain: "magic-mirror-305401.firebaseapp.com",

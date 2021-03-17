@@ -129,6 +129,10 @@ var config = {
 			noNotificationsMessage: "No new notifications",
 			debugMode: false,
 		}
+	},
+	{
+		module: "clean_message",
+		position: "top_bar"
 	}
 	]
 
