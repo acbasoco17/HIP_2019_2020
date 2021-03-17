@@ -131,8 +131,19 @@ var config = {
 		}
 	}, */
 	{
-		module: "clean_message",
-		position: "bottom_right"
+		module: 'MMM-MessageToMirror',
+		postion: 'middle_center',
+		disabled: false,
+		config: {
+			name: "Magic Mirror",
+			database: "magic-mirror-305401",
+			functions: "https://magic-mirror-305401-default-rtdb.firebaseio.com/",
+			screenKey: "MMM-MessageToMirror-WILL_BE_REPLACED_AT_FIRST_STARTUP",
+			users: [
+				{email: "acbasoco17@gmail.com", name: "Ana"}
+			],
+			newMessageSound: "newmessage.wav"
+		}
 	}
 	]
 
