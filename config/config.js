@@ -97,7 +97,7 @@ var config = {
 				broadcastNewsUpdates: true
 			}
 		},
-		{
+		/*{
 		module: 'MMM-PushBulletNotifications',
 		header: 'Notifications',
 		position: 'bottom_right',	// This can be any of the regions.
@@ -129,10 +129,10 @@ var config = {
 			noNotificationsMessage: "No new notifications",
 			debugMode: false,
 		}
-	},
+	}, */
 	{
 		module: "clean_message",
-		position: "top_bar"
+		position: "bottom_right"
 	}
 	]
 
