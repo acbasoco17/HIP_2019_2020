@@ -97,7 +97,7 @@ var config = {
 				broadcastNewsUpdates: true
 			}
 		},
-		/*{
+		{
 		module: 'MMM-PushBulletNotifications',
 		header: 'Notifications',
 		position: 'bottom_right',	// This can be any of the regions.
@@ -129,7 +129,7 @@ var config = {
 			noNotificationsMessage: "No new notifications",
 			debugMode: false,
 		}
-	}, */
+	},
 	{
 		module: "helloworld",
 		position: "bottom_right"
@@ -141,3 +141,40 @@ var config = {
 
 /*************** DO NOT EDIT THE LINE BELOW ***************/
 if (typeof module !== "undefined") {module.exports = config;}
+var firebase = require("firebase");
+var PushBullet = require('pushbullet');
+var pusher = new PushBullet('o.weOLHHAQhbwZNGf0Y3qoEhzAGOG31eJl');
+
+var date;
+var time;
+var name;
+
+function sentence() {
+  const config = {
+    apiKey: "AIzaSyCBYsN7VD4yYAQy-6lK5ug1GLZE63uZxyo",
+    authDomain: "magic-mirror-305401.firebaseapp.com",
+    databaseURL: "https://magic-mirror-305401-default-rtdb.firebaseio.com",
+    projectId: "magic-mirror-305401",
+    storageBucket: "magic-mirror-305401.appspot.com",
+    messagingSenderId: "128949355841",
+    appId: "1:128949355841:web:0ed3a49f49595815664dc0",
+    measurementId: "G-NEBVFJQNL4"
+  };
+  firebase.initializeApp(config);
+  var dbRefObject = firebase.database().ref().child("Log").limitToLast(1);
+  dbRefObject.once("value").then(function(allSnapshot){
+    allSnapshot.forEach(function(snapshot) {
+      var values = snapshot.val();
+      snapshot.forEach(function(childSnapshot) {
+			});
+      date = values["Date"];
+      time = values["Time"];
+      name = values["User"];
+      var msg = "This bathroom was last cleaned on " + date + " at " + time + " by " + name + "."
+      console.log(msg);
+      pusher.note('ujws89697LgsjEzrQ8czAG', 'New Note', msg, function(error, response) {});
+    });
+  });
+};
+
+sentence();
