@@ -129,10 +129,6 @@ var config = {
 			noNotificationsMessage: "No new notifications",
 			debugMode: false,
 		}
-	},
-	{
-		module: "helloworld",
-		position: "bottom_right"
 	}
 	]
 
