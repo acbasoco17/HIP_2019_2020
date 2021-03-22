@@ -153,8 +153,8 @@ function sentence() {
     projectId: "magic-mirror-305401",
     storageBucket: "magic-mirror-305401.appspot.com",
     messagingSenderId: "128949355841",
-    appId: "1:128949355841:web:0ed3a49f49595815664dc0",
-    measurementId: "G-NEBVFJQNL4"
+    appId: "1:128949355841:web:2ceaf3b302657ee0664dc0",
+    measurementId: "G-ZETY1KJ0V4"
   };
   firebase.initializeApp(config);
   var dbRefObject = firebase.database().ref().child("Log").limitToLast(1);
