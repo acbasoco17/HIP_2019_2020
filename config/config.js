@@ -100,12 +100,12 @@ var config = {
 		{
 		module: 'MMM-PushBulletNotifications',
 		header: 'Notifications',
-		position: 'bottom_right',	// This can be any of the regions.
+		position: 'top_bar',	// This can be any of the regions.
 		config: {
 			// See 'Configuration options' for more information.
 			accessToken: "o.bzToNHGXJcPuJxBFROdPz3qjSY0BmH97", //PushBullet API Access Token
 			endToEndPassword: null,
-			numberOfNotifications: 3,
+			numberOfNotifications: 1,
 			filterTargetDeviceName: "",
 			showPushesSentToAllDevices: true,
 			onlyAllowCommandsFromSourceDevices: [],
@@ -123,7 +123,7 @@ var config = {
 			localesDateTime: 'nl-NL',
 			playSoundOnNotificationReceived: true,
 			soundFile: 'modules/MMM-PushBulletNotifications/sounds/new-message.mp3',
-			maxMsgCharacters: 50,
+			// maxMsgCharacters: 50,
 			maxHeaderCharacters: 32,
 			showModuleIfNoNotifications: true,
 			noNotificationsMessage: "No new notifications",
