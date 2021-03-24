@@ -117,7 +117,7 @@ var config = {
 			playSoundOnNotificationReceived: true,
 			soundFile: 'modules/MMM-PushBulletNotifications/sounds/new-message.mp3',
 			maxMsgCharacters: 200,
-			maxHeaderCharacters: 32,
+			maxHeaderCharacters: 0,
 			showModuleIfNoNotifications: true,
 			noNotificationsMessage: "No new notifications",
 			debugMode: false,
