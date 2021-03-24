@@ -151,14 +151,17 @@ function sentence() {
   };
   firebase.initializeApp(config);
   var dbRefObject = firebase.database().ref().child("Log").limitToLast(1);
-  dbRefObject.on("child_added", function(snapshot, prevChildKey){
-    var values = snapshot.val();
-    date = values["Date"];
-    time = values["Time"];
-    name = values["User"];
-    var msg = "This bathroom was last cleaned on " + date + " at " + time + " by " + name + "."
-    console.log(msg);
-    pusher.note('ujws89697LgsjEzrQ8czAG', 'New Note', msg, function(error, response) {});
+
+	dbRefObject.on("value", function(querySnapshot) {
+    querySnapshot.forEach(function(query){
+      var values = query.val();
+      date = values["Date"];
+      time = values["Time"];
+      name = values["User"];
+      message = "This bathroom was last cleaned on " + date + " at " + time + " by " + name + "."
+    })
+    console.log(message);
+		pusher.note('ujws89697LgsjEzrQ8czAG', 'New Note', msg, function(error, response) {});
   });
 };
 
