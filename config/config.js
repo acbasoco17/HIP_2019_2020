@@ -32,13 +32,6 @@ var config = {
 
 	modules: [
 		{
-			module: "alert",
-			config: {
-				  effect: "flip",
-					welcome_message: "hello world"
-				}
-			},
-		{
 			module: "updatenotification",
 			position: "top_bar"
 		},
@@ -123,7 +116,7 @@ var config = {
 			localesDateTime: 'nl-NL',
 			playSoundOnNotificationReceived: true,
 			soundFile: 'modules/MMM-PushBulletNotifications/sounds/new-message.mp3',
-			// maxMsgCharacters: 50,
+			maxMsgCharacters: 200,
 			maxHeaderCharacters: 32,
 			showModuleIfNoNotifications: true,
 			noNotificationsMessage: "No new notifications",
