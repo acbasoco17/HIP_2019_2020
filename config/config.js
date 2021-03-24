@@ -109,7 +109,7 @@ var config = {
 			showMirroredNotifications: true,
 			onlyShowLastNotificationFromApplication: false,
 			showIndividualNotifications: false,
-			showSMS: true,
+			showSMS: false,
 			showMessage: true,
 			showIcons: false,
 			showDateTime: false,
