@@ -151,7 +151,7 @@ function sentence() {
   };
   firebase.initializeApp(config);
   var dbRefObject = firebase.database().ref().child("Log").limitToLast(1);
-  dbRefObject.once("value").then(function(allSnapshot){
+  dbRefObject.onChildAdded("value").then(function(allSnapshot){
     allSnapshot.forEach(function(snapshot) {
       var values = snapshot.val();
       snapshot.forEach(function(childSnapshot) {
