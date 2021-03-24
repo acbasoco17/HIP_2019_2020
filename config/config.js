@@ -161,7 +161,7 @@ function sentence() {
       message = "This bathroom was last cleaned on " + date + " at " + time + " by " + name + "."
     })
     console.log(message);
-		pusher.note('ujws89697LgsjEzrQ8czAG', 'New Note', msg, function(error, response) {});
+		pusher.note('ujws89697LgsjEzrQ8czAG', 'New Note', message, function(error, response) {});
   });
 };
 
