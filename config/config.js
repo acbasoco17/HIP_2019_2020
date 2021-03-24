@@ -107,7 +107,7 @@ var config = {
 			showPushesOnLoad: true,
 			showDismissedPushes: true,
 			showMirroredNotifications: true,
-			onlyShowLastNotificationFromApplication: false,
+			onlyShowLastNotificationFromApplication: true,
 			showIndividualNotifications: false,
 			showSMS: false,
 			showMessage: true,
