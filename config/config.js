@@ -48,7 +48,8 @@ var config = {
 					{
 						symbol: "calendar-check",
 						url: "webcal://www.calendarlabs.com/ical-calendar/ics/76/US_Holidays.ics"					}
-				]
+				],
+				maximumEntries: 3
 			}
 		},
 		{
