@@ -134,6 +134,7 @@ if (typeof module !== "undefined") {module.exports = config;}
 var firebase = require("firebase");
 var PushBullet = require('pushbullet');
 var pusher = new PushBullet('o.weOLHHAQhbwZNGf0Y3qoEhzAGOG31eJl');
+//Try o.xqjXIFfEF9khpBVy6nKM7D28rxJbohZP if it doesn't work
 
 var date;
 var time;
