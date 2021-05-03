@@ -94,7 +94,7 @@ var config = {
 		{
 		module: 'MMM-PushBulletNotifications',
 		header: 'Notifications',
-		position: 'top_center',	// This can be any of the regions.
+		position: 'top',	// This can be any of the regions.
 		config: {
 			// See 'Configuration options' for more information.
 			accessToken: "o.bzToNHGXJcPuJxBFROdPz3qjSY0BmH97", //PushBullet API Access Token
