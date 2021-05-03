@@ -54,7 +54,7 @@ var config = {
 		},
 		{
 			module: "compliments",
-			position: "center_right"
+			position: "right"
 		},
 		{
 			module: "currentweather",
@@ -77,7 +77,7 @@ var config = {
 		},
 		{
 			module: "newsfeed",
-			position: "center_left",
+			position: "left",
 			config: {
 				feeds: [
 					{
