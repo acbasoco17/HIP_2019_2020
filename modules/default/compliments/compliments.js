@@ -12,24 +12,25 @@ Module.register("compliments", {
 	defaults: {
 		compliments: {
 			anytime: [
-				"Hey there sexy!"
+				"Good luck!"
 			],
 			morning: [
 				"Good morning, gorgeous!",
 				"Enjoy your day!",
-				"How was your sleep?",
+				"How did you sleep?",
 				"Today's the day!",
 				"Make today your favorite day!"
 			],
 			afternoon: [
-				"Hello, Ana!",
-				"Hello, Arizza!",
-				"Hello, Deja!"
+				"Still time to make today great!",
+				"Don't stop now!",
+				"You're on a roll today!",
+				"Need a nap yet?"
 			],
 			evening: [
-				"Wow, you look hot!",
-				"You look nice!",
-				"Hi, sexy!"
+				"Wow, still on a roll!",
+				"Great work today!",
+				"Looking forward to bedtime?"
 			]
 		},
 		updateInterval: 30000,
